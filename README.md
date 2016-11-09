@@ -195,6 +195,30 @@ public class TryCatch
      }
  }
 ```
+###แก้ไขใหม่
+``` csharp
+using System;
+public class Class1
+{
+    static void Main(string[] args)
+    {
+        object o2 = null;
+        try
+        {
+            int a = 0;
+            int b = 10;
+            b /= a;
+            Console.WriteLine(a);
+        }
+        catch (DivideByZeroException e)
+        {
+            Console.WriteLine(e.Message);
+        }
+    }
+}
+``` 
+
+![](https://github.com/Patcharanan/LAB-08/blob/master/imgs/3.PNG?raw=true)
 ###3.
 ``` csharp
 using System;
