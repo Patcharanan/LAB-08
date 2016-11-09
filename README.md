@@ -611,6 +611,64 @@ Grade C
 
 3. รูปแบบการพิมพ์คือ score: [sss] grade: [gg] เมื่อ sss คือคะแนน และ gg คือ เกรดที่ได้
 
+###โค้ดโปรแกรม
+```cs
+using System;
+using System.IO;
+class Class5
+{
+    static void Main(string[] args)
+    {
+        Random random = new Random();
+        int sss = random.Next(0, 100);
+
+        if (sss < 50)
+        {
+            Console.WriteLine("Score : " + sss);
+            Console.WriteLine("Grade : F");
+        }
+        else if (sss < 55)
+        {
+            Console.WriteLine("Score : " + sss);
+            Console.WriteLine("Grade : D");
+        }
+        else if (sss < 60)
+        {
+            Console.WriteLine("Score : " + sss);
+            Console.WriteLine("Grade : D+");
+        }
+        else if (sss < 65)
+        {
+            Console.WriteLine("Score : " + sss);
+            Console.WriteLine("Grade : C");
+        }
+        else if (sss < 70)
+        {
+            Console.WriteLine("Score : " + sss);
+            Console.WriteLine("Grade : C+");
+        }
+        else if (sss < 75)
+        {
+            Console.WriteLine("Score : " + sss);
+            Console.WriteLine("Grade : B");
+        }
+        else if (sss < 80)
+        {
+            Console.WriteLine("Score : " + sss);
+            Console.WriteLine("Grade : B+");
+        }
+        else
+        {
+            Console.WriteLine("Score : " + sss);
+            Console.WriteLine("Grade : A");
+        }
+    }
+}
+```
+
+![](https://github.com/Patcharanan/LAB-08/blob/master/imgs/11.1.PNG?raw=true)
+
+![](https://github.com/Patcharanan/LAB-08/blob/master/imgs/11.2.PNG?raw=true)
 ###1.2.5. คำสั่ง ```switch```
 
 ในกรณีที่มีทางเลือกในการตัดสินใจเป็นจำนวนมาก ไม่เป็นการสะดวกที่จะเขียนเป็นโปรแกรมยาวๆ เช่นในกรณีของคำสั่ง if…else…if ภาษา C# มีคำสั่งตัดสินใจเลือกทิศทางของโปรแกรมแบบหลายทางเลือกให้ใช้คือคำสั่ง switch ซึ่งรูปแบบการใช้งาน ดังนี้
