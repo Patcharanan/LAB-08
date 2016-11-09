@@ -406,6 +406,42 @@ execute next line
 2.	ถ้าค่าที่ผู้ใช้ป้อน น้อยกว่า ค่าที่สุ่มมาได้ ให้พิมพ์ ```“Too Low, You loss!!”```ออกทางหน้าจอ
 3.	ถ้าค่าที่ผู้ใช้ป้อน เท่ากับ ค่าที่สุ่มมาได้ ให้พิมพ์ ```“Okay, You win!!”``` ออกทางหน้าจอ
 
+###โค้ดโปรแกรม
+```
+using System;
+using System.IO;
+class Class3
+    {
+    public static void Main()
+    {
+        Random random = new Random();
+        int randomNumber = random.Next(0, 100);
+        Console.WriteLine("Number Random : " + randomNumber);
+        Console.Write("Please Enter Number : ");
+        int a = Convert.ToInt32(Console.ReadLine());
+        if (a > randomNumber)
+        {
+            Console.WriteLine("Too Hight, You loss!!");
+        }
+        if (a < randomNumber)
+        {
+            Console.WriteLine("Too Low, You loss!!");
+        }
+        if (a == randomNumber)
+        {
+            Console.WriteLine("Okay, You win!!");
+        }
+    }
+}
+```
+###Loss
+![](https://github.com/Patcharanan/LAB-08/blob/master/imgs/9.1%20loss.PNG?raw=true)
+
+###Win
+![](https://github.com/Patcharanan/LAB-08/blob/master/imgs/9.1%20win.PNG?raw=true)
+
+###Draw
+![](https://github.com/Patcharanan/LAB-08/blob/master/imgs/9.1%20draw.PNG?raw=true)
 ###1.2.2.	คำสั่ง ```if…else```
 
 เงื่อนไขที่เป็นไปได้ของคำสั่งในการตัดสินใจมีสองทางเสมอ (true และ false) ที่ผ่านมา เราจะเห็นว่า คำสั่ง if เป็นคำสั่งที่เลือกทำเพียงทางเดียว (เฉพาะในกรณีที่เงื่อนไขเป็น true เท่านั้น) หากต้องการให้โปรแกรมทำงานทั้งกรณีที่เงื่อนไขเป็น true และ false เราต้องใช้คำสั่ง if…else โดยมีรูปแบบดังนี้
