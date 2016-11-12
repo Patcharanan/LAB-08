@@ -797,6 +797,8 @@ using System;
 
 ```
 ![](https://github.com/Patcharanan/LAB-08/blob/master/imgs/12.PNG?raw=true)
+
+#นายพชรนันท์ จันทร์รักษ์ 57030198
 ###Exceptions
 
 Exception | Condition
